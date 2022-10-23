@@ -18,9 +18,6 @@ tuberias[0] = {
 
 var score = 0
 
-//variables audios
-var punto = new Audio()
-punto.src = "audio/punto.mp3";
 
 //variables imagenes
 var bird = new Image()
@@ -84,7 +81,7 @@ function loop() {
 
         if (tuberias[i].x == Personaje.x) {
             score++
-            punto.play()
+            
         }
 
 
