@@ -18,6 +18,10 @@ tuberias[0] = {
 
 var score = 0
 
+//variables audios
+var punto = new Audio()
+punto.src = "audio/punto.mp3";
+
 //variables imagenes
 var bird = new Image()
 bird.src = "img/bird.png";
@@ -86,4 +90,11 @@ function loop() {
 
 
     }
+    //condiciones
+    Personaje.y += gravedad
+    contexto.fillStyles = "rgba(0,0,0,1)"
+    contexto.font = "25px arial"
+    contexto.fillText("Score:" + score, 10, contexto.canvas.height - 40)
 }
+//eventos
+window.addEventListener("keydown", presionar)
